@@ -1,0 +1,5 @@
+#phpStorm
+.idea
+.idea/
+.idea/*
+.idea/**/*
