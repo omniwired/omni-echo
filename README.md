@@ -5,7 +5,7 @@ Fork of the hugely popular echo.js that adds responsive image loading
 
 This project was born out of the necessity to make the American Idol (2014) website to load faster.
 
-##Lazy oading on the X axis
+##Lazy loading on the X axis
 
 Americanidol.com had many carousels in place that made imperative to find a way to lazy load images not only in the y axis but also in the x axis. This wasn't the case back then of what was implemented in echojs.
 
