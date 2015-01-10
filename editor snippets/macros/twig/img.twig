@@ -1,0 +1,25 @@
+{% macro img(src, alt, class) %}
+    {# Supporting JS disabled clients #}
+    <noscript>
+        <img {% if class != '' %}class="{{class}}" {% endif %} src="{{src}}" alt="{{alt}}">
+    </noscript>
+    {# JS-based functionality #}
+    <span class="omniecho {{class}}" data-alt="{{alt}}" data-echo="{{src}}"></span>
+{% endmacro %}
+{% macro respon_img(small, medium, large, xlarge, alt, class) %}
+    {# Supporting JS disabled clients #}
+    <noscript>
+        <img {% if class != '' %}class="{{class}}" {% endif %} src="{{large}}" alt="{{alt}}">
+    </noscript>
+    {# JS-based functionality #}
+    <span class="omniecho {{class}}" data-alt="{{alt}}"
+          data-src-small="{{ small }}"
+          data-src-medium="{{ medium }}"
+          data-src-large="{{ large }}"
+            {% if xlarge != '' %}
+        data-src-xlarge="{{ xlarge }}"
+        data-echo="{{ xlarge }}"
+    {% else %}
+        data-echo="{{ large }}"
+            {% endif %}></span>
+{% endmacro %}
