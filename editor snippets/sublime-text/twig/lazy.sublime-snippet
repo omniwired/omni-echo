@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[{{lazy.img("${1:src}", "${2:alt}", "${3:class}")}}]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>lazy</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
