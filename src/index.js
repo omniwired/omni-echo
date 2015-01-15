@@ -1,4 +1,4 @@
-window.Echo = (function (window, document, undefined) {
+window.Echo = (function (window, document) {
 
     'use strict';
 
@@ -9,9 +9,7 @@ window.Echo = (function (window, document, undefined) {
         var inViewHeight = ((coords.top >= 0 && coords.left >= 0 && coords.top) <= (window.innerHeight || document.documentElement.clientHeight) + parseInt(offset, 10));
         var inViewWidth  = (coords.left <= (window.innerWidth || document.documentElement.clientWidth) + parseInt(offset, 10));
 
-        var inView = inViewHeight && inViewWidth;
-
-        return inView;
+        return inViewHeight && inViewWidth;
     };
 
     var _pollImages = function () {

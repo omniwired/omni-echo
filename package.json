@@ -1,0 +1,25 @@
+{
+  "name": "omni-echo",
+  "version": "1.0.0",
+  "description": "Tiny lazy loading and responsive images",
+  "main": "src",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omniwired/omni-echo.git"
+  },
+  "keywords": [
+    "responsive",
+    "images",
+    "lazy",
+    "loading"
+  ],
+  "author": "Juan Manuel Combetto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omniwired/omni-echo/issues"
+  },
+  "homepage": "https://github.com/omniwired/omni-echo"
+}
